@@ -1,0 +1,35 @@
+
+.film {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #999;
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+      flex-direction: row;
+    }
+  }
+
+  &__crawl {
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+
+  &__charactersList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      margin-right: 2em;
+    }
+  }
+}
